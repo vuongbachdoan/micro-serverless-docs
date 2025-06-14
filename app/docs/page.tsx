@@ -655,7 +655,7 @@ export default function DocsPage() {
                     <User className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <CardTitle className="text-white">Bach Doãn Vương (Vuong)</CardTitle>
+                    <CardTitle className="text-white">Bạch Doãn Vương</CardTitle>
                     <CardDescription className="text-white/90">
                       AWS Community Builder | Cloud Engineer | AWS & GCP Certified
                     </CardDescription>

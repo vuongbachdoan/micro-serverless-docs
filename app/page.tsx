@@ -429,7 +429,7 @@ export default function HomePage() {
                     <User className="w-16 h-16 text-white" />
                   </div>
                   <div className="text-center md:text-left">
-                    <h3 className="text-3xl font-bold mb-2">Bach Doãn Vương (Vuong)</h3>
+                    <h3 className="text-3xl font-bold mb-2">Bạch Doãn Vương</h3>
                     <p className="text-xl mb-2">Cloud Engineer | AWS & GCP Certified</p>
                     <p className="text-lg opacity-90">DevOps & Security Enthusiast</p>
                     <Badge className="mt-3 bg-white/20 text-white backdrop-blur-sm">✅ AWS Community Builder</Badge>
