@@ -73,7 +73,7 @@ export function AWSBackground() {
             <div className="absolute top-3 left-3 right-5 h-1 bg-green-600/20 dark:bg-green-400/20 rounded"></div>
             <div className="absolute bottom-3 right-3 w-4 h-4 bg-green-600/25 dark:bg-green-400/25 rounded-full"></div>
             <div className="absolute top-2 left-2 w-12 h-6 bg-white/30 dark:bg-black/30 rounded flex items-center justify-center">
-              <div className="text-xs font-bold text-green-800 dark:text-green-200">DB</div>
+              <div className="text-xs font-bold text-green-800 dark:text-green-200"></div>
             </div>
           </div>
         </div>
