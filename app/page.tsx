@@ -28,8 +28,8 @@ export default function HomePage() {
       <nav className="backdrop-blur-md bg-white/70 dark:bg-gray-900/70 sticky top-0 z-50 transition-colors duration-300 relative">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
-              <AWSCloud className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+              <img src="/logo.png" alt="MicroServerless Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
               MicroServerless
@@ -566,8 +566,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
-                  <AWSCloud className="w-5 h-5 text-white" />
+                <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                  <img src="/logo.png" alt="MicroServerless Logo" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-xl font-bold">MicroServerless</span>
               </div>

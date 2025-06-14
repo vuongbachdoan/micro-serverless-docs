@@ -29,8 +29,8 @@ export default function DocsPage() {
               </Link>
             </Button>
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
-                <AWSCloud className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                <img src="/logo.png" alt="MicroServerless Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
                 MicroServerless Docs
