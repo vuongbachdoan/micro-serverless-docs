@@ -258,8 +258,8 @@ export default function HomePage() {
                 <CardTitle className="text-gray-800 dark:text-gray-100">Install & Setup</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="bg-gray-900 dark:bg-black text-orange-400 p-4 rounded-xl text-left font-mono text-sm shadow-inner">
-                  <div>https://github.com/vuongbachdoan/micro-serverless</div>
+                <div className="bg-gray-900 dark:bg-black text-orange-400 p-4 rounded-xl text-left font-mono text-sm shadow-inner break-words">
+                  <div className="break-all">https://github.com/vuongbachdoan/micro-serverless</div>
                   <div>npm install</div>
                   <div>cdk bootstrap</div>
                 </div>
