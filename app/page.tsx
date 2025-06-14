@@ -259,7 +259,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <div className="bg-gray-900 dark:bg-black text-orange-400 p-4 rounded-xl text-left font-mono text-sm shadow-inner">
-                  <div>git clone &lt;repo-url&gt;</div>
+                  <div>https://github.com/vuongbachdoan/micro-serverless</div>
                   <div>npm install</div>
                   <div>cdk bootstrap</div>
                 </div>
