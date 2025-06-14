@@ -96,9 +96,9 @@ export default function DocsPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2 text-gray-800 dark:text-gray-100">Installation</h4>
-                  <div className="bg-gray-900 dark:bg-black text-orange-400 p-4 rounded-xl font-mono text-sm space-y-1 shadow-inner">
+                  <div className="bg-gray-900 dark:bg-black text-orange-400 p-4 rounded-xl font-mono text-sm space-y-1 shadow-inner overflow-x-auto">
                     <div># Clone the repository</div>
-                    <div>https://github.com/vuongbachdoan/micro-serverless</div>
+                    <div className="break-words">https://github.com/vuongbachdoan/micro-serverless</div>
                     <div></div>
                     <div># Install dependencies</div>
                     <div>npm install</div>
