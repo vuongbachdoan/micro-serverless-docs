@@ -59,7 +59,7 @@ export default function HomePage() {
               asChild
               className="bg-gradient-to-r from-orange-400 to-amber-500 hover:from-orange-500 hover:to-amber-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Link href="https://https://github.com/vuongbachdoan/micro-serverless" target="_blank">
+              <Link href="https://github.com/vuongbachdoan/micro-serverless" target="_blank">
                 <GitBranch className="w-4 h-4 mr-2" />
                 GitHub
               </Link>
