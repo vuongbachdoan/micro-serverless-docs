@@ -276,19 +276,34 @@ service:
                   <CardContent>
                     <div className="bg-gray-900 dark:bg-black text-gray-100 p-4 rounded-xl overflow-x-auto shadow-inner">
                       <pre className="text-sm">
-                        <code>{`service:
-  name: api-service
-  runtime: nodejs18.x
-  handler: index.handler
-  
-  api:
-    path: /api
-    method: ANY
-    public: true
-    domain:
-      name: api.example.com
-      certificateArn: arn:aws:acm:us-east-1:123456789012:certificate/abcdef-1234-5678-abcd-123456789012
-      hostedZoneId: Z1234567890ABCDEFGHIJK`}</code>
+                        <code>{`ingress:
+  name: api-ingress
+  annotations:
+    route53.hostedZoneId: Z00976892A2KHU6N0F7PT
+    domain.existing: "true"  
+  tls:
+    - hosts:
+        - sample.domain.com
+      certificateArn: arn:aws:acm:us-east-1:123456789012:certificate/abcdef
+  rules:
+    - host: sample.domain.com
+      http:
+        paths:
+          - path: /hello
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-service
+          - path: /users
+            pathType: Prefix
+            backend:
+              service:
+                name: user-service
+          - path: /orders
+            pathType: Prefix
+            backend:
+              service:
+                name: orders-service`}</code>
                       </pre>
                     </div>
                   </CardContent>
