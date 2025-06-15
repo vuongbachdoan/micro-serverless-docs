@@ -160,15 +160,22 @@ export default function DocsPage() {
   memory: 256
   timeout: 30
   
+  # API Gateway configuration
   api:
     path: /hello
     method: GET
     public: true
     cors: true
     
+  # Environment variables
   environment:
     STAGE: dev
-    LOG_LEVEL: info`}</code>
+    LOG_LEVEL: info
+    
+  # Secrets (from AWS Secrets Manager)
+  secrets:
+    - name: API_KEY
+      secretId: hello-service/api-key`}</code>
                       </pre>
                     </div>
                   </CardContent>
@@ -190,24 +197,32 @@ export default function DocsPage() {
   name: user-service
   runtime: nodejs18.x
   handler: index.handler
+  memory: 512
+  timeout: 60
   
   api:
     path: /users
     method: ANY
     public: true
+    cors: true
     
+  environment:
+    STAGE: dev
+    
+  # DynamoDB table configuration
   dynamodb:
-    - name: UsersTable
+    - name: UsersTableSample
       partitionKey: userId
       sortKey: email
       billingMode: PAY_PER_REQUEST
-      ttl: expiresAt
       globalSecondaryIndexes:
         - name: EmailIndex
           partitionKey: email
-        - name: StatusIndex
-          partitionKey: status
-          sortKey: createdAt`}</code>
+      
+  # Secrets
+  secrets:
+    - name: DB_CREDENTIALS
+      secretId: user-service/db-credentials`}</code>
                       </pre>
                     </div>
                   </CardContent>
@@ -225,7 +240,8 @@ export default function DocsPage() {
                   <CardContent>
                     <div className="bg-gray-900 dark:bg-black text-gray-100 p-4 rounded-xl overflow-x-auto shadow-inner">
                       <pre className="text-sm">
-                        <code>{`service:
+                        <code>{`
+service:
   name: orders-service
   runtime: nodejs18.x
   handler: index.handler
@@ -242,15 +258,7 @@ export default function DocsPage() {
     engine: postgres
     secrets:
       - name: DB_CONNECTION
-        secretId: orders-service/db-connection
-        
-  vpc:
-    id: vpc-12345
-    subnets:
-      - subnet-12345
-      - subnet-67890
-    securityGroups:
-      - sg-12345`}</code>
+        secretId: orders-service/db-connection`}</code>
                       </pre>
                     </div>
                   </CardContent>
