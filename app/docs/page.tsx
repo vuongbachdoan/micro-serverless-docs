@@ -93,7 +93,6 @@ export default function DocsPage() {
                       AWS CDK installed:{" "}
                       <div className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded relative inline-block">
                         <code>npm install -g aws-cdk</code>
-                        <CopyButton text="npm install -g aws-cdk" />
                       </div>
                     </li>
                   </ul>
